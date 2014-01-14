@@ -29,7 +29,6 @@ PhoneGap Team
 
 <gap:plugin name="com.phonegap.plugins.pushplugin" />
 <gap:plugin name="org.apache.cordova.core.device" />
-<gap:plugin name="org.apache.cordova.core.audiohandler" />
 <gap:plugin name="org.apache.cordova.core.dialogs" />
 <gap:plugin name="org.apache.cordova.core.camera"/>
 <gap:plugin name="org.apache.cordova.core.file"/>

@@ -7,7 +7,7 @@ This Fizz Community
 <author email="support@peoplenook.com" href="http://peopenook.com">
 PhoneGap Team
 </author>
-<preference name="phonegap-version" value="3.0.0"/>
+<preference name="phonegap-version" value="3.1.0"/>
 <feature name="http://api.phonegap.com/1.0/device"/>
 
 <preference name="orientation" value="portrait"/>

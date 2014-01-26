@@ -112,7 +112,8 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        this.findHost();
+      //  this.findHost();
+      this.loadUrl();
         this.timeoutModal();
     },
     timeoutModal : function(){
@@ -123,6 +124,10 @@ var app = {
             })
 
         },10000);
+    }
+    loadUrl(){
+          window.location = 'http://live.peoplenook.com:3080';
+        
     }
     ,
     findHost : function(){

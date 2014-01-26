@@ -68,5 +68,5 @@ PhoneGap Team
 <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg"/>
 <access origin="*"/>
 
-<content src="http://live.peoplenook.com/"/>
+<content src="index.html"/>
         </widget>

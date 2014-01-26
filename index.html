@@ -2,7 +2,7 @@
 <head>
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
-  <title>Cordova Meteor Hello world</title>
+  <title>Meteor Cordova Hello World</title>
 
   <link rel="stylesheet" type="text/css" href="css/meteor.cordova.css">
 
@@ -13,22 +13,32 @@
 
   <!--<script charset="utf-8" type="text/javascript" src="meteor.cordova.push.js"></script>-->
 
-
-
-</head>
-<body>
-  <iframe id="meteor" src="http://live.peoplenook.com"></iframe>
-
   <script type="text/javascript">
+    shellVersion = '0.0.1';
+
+    document.addEventListener('deviceready', function() {
+
+      meteor = new MeteorCordova('http://live.peoplenook.com', {
+        // This shell version
+        version: '0.0.1',
+        // Do we rely on appcache?
+        appcache: false
+      });
+
+      meteor.load(function(error) {
+        if (error) {
+          alert('error: ' + error);
+        }
+      });
+
+      // meteor.initPush({ senderID: 'xxxxxxxxxxx' });
   
-    shellVersion = '0.1.4';
-
-    meteor = new MeteorCordova('meteor');
-
-    // meteor.initPush({ senderID: 'xGoogleKeyx' });
+    });
 
   </script>
 
+</head>
+<body>
 
 </body>
 </html>

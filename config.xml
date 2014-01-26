@@ -24,7 +24,7 @@ PhoneGap Team
 <preference name="android-minSdkVersion" value="7"/>
 <preference name="android-installLocation" value="auto"/>
 <preference name="splash-screen-duration" value="4000"/>
-<preference name=”stay-in-webview” value=”true” />
+<preference name="stay-in-webview" value=”true” />
 
 
 
@@ -37,6 +37,8 @@ PhoneGap Team
 <gap:plugin name="org.apache.cordova.core.console"/>
 <gap:plugin name="org.apache.cordova.core.geolocation"/>
 <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
+<gap:plugin name="org.apache.cordova.network-information"/>
+
 
 
 

@@ -27,7 +27,7 @@ PhoneGap Team
 <preference name="stay-in-webview" value=”true” />
 
 
-
+<gap:plugin name="dk.gi2.plugins.meteorcordova" />
 <gap:plugin name="com.phonegap.plugins.pushplugin" />
 <gap:plugin name="org.apache.cordova.core.device" />
 <gap:plugin name="org.apache.cordova.core.dialogs" />

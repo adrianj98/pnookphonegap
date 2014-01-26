@@ -24,6 +24,7 @@ PhoneGap Team
 <preference name="android-minSdkVersion" value="7"/>
 <preference name="android-installLocation" value="auto"/>
 <preference name="splash-screen-duration" value="4000"/>
+<preference name=”stay-in-webview” value=”true” />
 
 
 
@@ -65,5 +66,5 @@ PhoneGap Team
 <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg"/>
 <access origin="*"/>
 
-<content src="http://live.peoplenook.com:3080"/>
+<content src="index.htm"/>
         </widget>

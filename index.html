@@ -47,17 +47,71 @@
     // device APIs are available
     //
     function onDeviceReady() {
-        var element = document.getElementById('deviceProperties');
-        element.innerHTML = 'Device Model: '    + device.model    + '<br />' +
-                            'Device Cordova: '  + device.cordova  + '<br />' +
-                            'Device Platform: ' + device.platform + '<br />' +
-                            'Device UUID: '     + device.uuid     + '<br />' +
-                            'Device Version: '  + device.version  + '<br />';
-        window.location =   "http://live.peoplenook.com/";
+
+        window.location =   "http://live.peoplenook.com:3080/";
     }
   
   </script>
-   <p id="deviceProperties">Loading device properties...</p>
+<style>.circle {
+  position: absolute;
+  border:3px solid transparent;
+  border-top: 3px solid hsl(119, 100%, 97%);
+  border-radius: 50%;
+  -webkit-animation: rotate linear infinite;
+}
+
+.circle.one {
+  height: 50px;
+  width: 50px;
+  left:50px;
+  top:50px;
+  -webkit-animation-duration: 0.85s;
+}
+
+.circle.two {
+  height: 75px;
+  width: 75px;
+  top: 38px;
+  left: 38px;
+  border-top: 3px solid hsl(131, 54%, 23%);
+  -webkit-animation-duration: 0.95s;
+}
+
+.circle.three {
+  height: 100px;
+  width: 100px;
+  top: 25px;
+  left: 25px;
+  -webkit-animation-duration: 1.05s;
+}
+
+@-webkit-keyframes rotate {
+  /* rotate on 3d transform for best perf, it ensures GPU accelerated animation */
+  from {
+    -webkit-transform: rotateZ(360deg);
+  }
+  to {
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+
+.loader {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-90px 0 0 -90px;
+
+}
+
+body {
+
+}
+</style>
+<div class="loader">
+  <div class="circle one"></div>
+  <div class="circle two"></div>
+  <div class="circle three"></div>
+</div>
  
 
 </body>

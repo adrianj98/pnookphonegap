@@ -43,7 +43,8 @@
   // Wait for device API libraries to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
-
+    document.addEventListener("resume", onDeviceReady, false);
+    document.addEventListener("online", onDeviceReady, false);
     // device APIs are available
     //
     function onDeviceReady() {

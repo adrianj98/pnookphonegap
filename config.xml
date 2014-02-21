@@ -8,7 +8,7 @@ This Fizz Community
 PhoneGap Team
 </author>
 <preference name="phonegap-version" value="3.1.0"/>
-<feature name="http://api.phonegap.com/1.0/device"/>
+
 
 <preference name="orientation" value="portrait"/>
 <preference name="target-device" value="universal"/>
@@ -24,20 +24,15 @@ PhoneGap Team
 <preference name="android-minSdkVersion" value="7"/>
 <preference name="android-installLocation" value="auto"/>
 <preference name="splash-screen-duration" value="4000"/>
-<preference name="stay-in-webview" value=”true” />
+<preference name="stay-in-webview" value="true" />
 
 
 
 <gap:plugin name="com.phonegap.plugins.pushplugin" />
-<gap:plugin name="org.apache.cordova.core.device" />
-<gap:plugin name="org.apache.cordova.core.dialogs" />
-<gap:plugin name="org.apache.cordova.core.camera"/>
-<gap:plugin name="org.apache.cordova.core.file"/>
-<gap:plugin name="org.apache.cordova.core.file-transfer"/>
-<gap:plugin name="org.apache.cordova.core.console"/>
-<gap:plugin name="org.apache.cordova.core.geolocation"/>
+<gap:plugin name="org.apache.cordova.camera"/>
+<gap:plugin name="org.apache.cordova.geolocation"/>
 <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
-<gap:plugin name="org.apache.cordova.network-information"/>
+
 
 
 
@@ -68,5 +63,5 @@ PhoneGap Team
 <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg"/>
 <access origin="*"/>
 
-<content src="http://live.peoplenook.com/"/>
+<content src="index.html"/>
         </widget>

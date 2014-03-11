@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.peoplenook.live" version="1.1.0"    versionCode = "161" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" >
+<widget id="com.peoplenook.live" version="1.1.1"    versionCode = "162" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" >
 <name>The Fizz</name>
 <description>
 This Fizz Community
 </description>
-<author email="support@peoplenook.com" href="http://peopenook.com">
-PhoneGap Team
+<author email="support@peoplenook.com" href="http://www.peopenook.com">
+The Fizz
 </author>
 <preference name="phonegap-version" value="3.1.0"/>
 
